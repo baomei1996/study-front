@@ -1,0 +1,20 @@
+{
+    "name": "study-front",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "commonjs",
+    "repository": "https://github.com/baomei1996/study-front.git",
+    "author": "baomei1996 <qhal4686@gmail.com>",
+    "scripts": {
+        "hello": "node ./hello.js",
+        "print": "echo \"print me!\""
+    },
+    "license": "MIT",
+    "dependencies": {
+        "loadash": "^1.0.0",
+        "moment": "^2.30.1"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    }
+}
