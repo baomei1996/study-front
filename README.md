@@ -62,6 +62,7 @@
       yarn add -D prettier
       ```
 
+
       ```
       // prettier config
       // https://prettier.io/docs/en/options.html
@@ -75,10 +76,12 @@
       }
       ```
 
+
       ```
       // prettier 포맷팅 스크립트 추가
        "format": "prettier --write \"src/**/*.{ts,tsx}\""
       ```
+
 
       ```
       // eslint 설정 시 필요 라이브러리 설치
