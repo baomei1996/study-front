@@ -49,11 +49,35 @@
 -   무엇이고, 왜 쓰는가?
 -   create react app 폴더 구조 설명
 -   component간 props전달
--   react hooks 
+-   react hooks (useState, useEffect)
+    - 실습1: Counter component
+    - 실습2: Timer component
 -   typescript / eslint / prettier config
+    - React 프로젝트 포맷팅을 통한 자동 코드 스타일 포맷팅 & 코드 품질 관리
+    - Prettier는 코드 포매팅 도구입니다. Prettier를 사용하면 코드를 일관된 스타일로 자동 정렬해주기 때문에, 개발자가 코드 스타일에 대해 신경 쓰지 않고 로직에 집중할 수 있습니다.
+    - ESLint는 코드 품질을 체크하는 린팅 도구입니다. ESLint를 사용하면 문법 오류, 버그의 원인이 될 수 있는 코드 패턴, 코드 스타일 등을 체크할 수 있습니다.
+    - prettier 설정 방법
+      ```
+      // prettier 설치
+      yarn add -D prettier
+      ```
+
+      ```json
+      // prettier config
+      singleQuote: true, // 문자열을 작성할 때 작은따옴표('')를 사용합니다.
+      semi: true, // 문장의 끝에 세미콜론(;)을 사용합니다.
+      useTabs: false, // 들여쓰기에 탭 대신 공백을 사용합니다.
+      tabWidth: 4, // 한 탭의 너비를 2개의 공백으로 설정합니다.
+      trailingComma: "all", // 객체나 배열, 함수 파라미터 등에서 마지막 항목 뒤에 항상 콤마(,)를 붙입니다.
+      printWidth: 80, // 한 줄의 최대 너비를 80자로 제한합니다.
+      ```
+
+      ```
+      // prettier 포맷팅 스크립트 추가
+       "format": "prettier --write \"src/**/*.{ts,tsx}\""
+      ```
 
 ## Chepter3: 추천해요!
-
 -   typescript: https://typescript-exercises.github.io/#exercise=1&file=%2Fnode_modules%2Ftype-assertions%2Findex.ts
 -   css: https://cssbattle.dev/
 -   can i use: https://caniuse.com/
