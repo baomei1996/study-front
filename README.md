@@ -47,13 +47,9 @@
 ## Chepter2: React
 
 -   무엇이고, 왜 쓰는가?
--   실습1: CRA로 리액트 프로제트 시작하기
--   폴더 구조 설명 / 구동 원리
--   hooks
+-   create react app 폴더 구조 설명
 -   component간 props전달
--   실습2: counter 만들기
--   전역 상태관리 Feat: MobX - 회사 비지니스 로직
--   실습3: userList api를 요청하여 받아와서 화면에 리스트 형식으로 표시하자
+-   react hooks 
 -   typescript / eslint / prettier config
 
 ## Chepter3: 추천해요!
