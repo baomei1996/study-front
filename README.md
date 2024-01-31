@@ -62,19 +62,52 @@
       yarn add -D prettier
       ```
 
-      ```json
+      ```
       // prettier config
-      singleQuote: true, // 문자열을 작성할 때 작은따옴표('')를 사용합니다.
+      // https://prettier.io/docs/en/options.html
+      module.exports = {
+            singleQuote: true, // 문자열을 작성할 때 작은따옴표('')를 사용합니다.
       semi: true, // 문장의 끝에 세미콜론(;)을 사용합니다.
       useTabs: false, // 들여쓰기에 탭 대신 공백을 사용합니다.
       tabWidth: 4, // 한 탭의 너비를 2개의 공백으로 설정합니다.
       trailingComma: "all", // 객체나 배열, 함수 파라미터 등에서 마지막 항목 뒤에 항상 콤마(,)를 붙입니다.
       printWidth: 80, // 한 줄의 최대 너비를 80자로 제한합니다.
+      }
       ```
 
       ```
       // prettier 포맷팅 스크립트 추가
        "format": "prettier --write \"src/**/*.{ts,tsx}\""
+      ```
+
+      ```
+      // eslint 설정 시 필요 라이브러리 설치
+      eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+        // eslint: JavaScript 코드를 분석해 문제점을 찾고 고치는 린팅(linting) 도구입니다.
+        // prettier: 코드 포매팅을 자동으로 해주는 도구입니다.
+        // typescript: JavaScript에 타입을 추가한 언어로, 적절한 타입 체크를 통해 버그를 사전에 방지할 수 있습니다.
+        // eslint-config-prettier: Prettier와 ESLint가 충돌하지 않도록 ESLint 규칙을 재정의하는 패키지입니다.
+        // eslint-plugin-prettier: Prettier를 ESLint에서 실행할 수 있게 해주는 플러그인입니다.
+        // eslint-plugin-react: React에 특화된 ESLint 규칙을 제공하는 플러그인입니다.
+        // @typescript-eslint/eslint-plugin: TypeScript에 특화된 ESLint 규칙을 제공하는 플러그인입니다.
+        // @typescript-eslint/parser: ESLint가 TypeScript 코드를 파싱할 수 있게 해주는 파서입니다.
+     ```
+
+      ```
+      module.exports = {
+          parser: '@typescript-eslint/parser', // ESLint가 TypeScript 코드를 파싱하기 위해 사용하는 파서를 설정합니다.
+          extends: [
+            'plugin:react/recommended', // React에 대한 추천 ESLint 규칙을 적용합니다.
+            'plugin:@typescript-eslint/recommended', // TypeScript에 대한 추천 ESLint 규칙을 적용합니다.
+            'prettier/@typescript-eslint', // Prettier와 TypeScript ESLint 규칙이 충돌하지 않도록 설정합니다.
+            'plugin:prettier/recommended', // Prettier 규칙을 적용하고, Prettier를 ESLint의 플러그인으로 설정합니다.
+          ],
+          rules: {
+            // 여기에 추가적인 ESLint 규칙을 설정할 수 있습니다.
+            // https://eslint.org/docs/latest/rules/
+          },
+        };
       ```
 
 ## Chepter3: 추천해요!
