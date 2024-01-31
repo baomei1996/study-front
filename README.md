@@ -94,20 +94,20 @@
         // @typescript-eslint/parser: ESLint가 TypeScript 코드를 파싱할 수 있게 해주는 파서입니다.
      ```
 
-      ```
-      module.exports = {
-          parser: '@typescript-eslint/parser', // ESLint가 TypeScript 코드를 파싱하기 위해 사용하는 파서를 설정합니다.
-          extends: [
-            'plugin:react/recommended', // React에 대한 추천 ESLint 규칙을 적용합니다.
-            'plugin:@typescript-eslint/recommended', // TypeScript에 대한 추천 ESLint 규칙을 적용합니다.
-            'prettier/@typescript-eslint', // Prettier와 TypeScript ESLint 규칙이 충돌하지 않도록 설정합니다.
-            'plugin:prettier/recommended', // Prettier 규칙을 적용하고, Prettier를 ESLint의 플러그인으로 설정합니다.
-          ],
-          rules: {
-            // 여기에 추가적인 ESLint 규칙을 설정할 수 있습니다.
-            // https://eslint.org/docs/latest/rules/
-          },
-        };
+     ```
+          module.exports = {
+              parser: '@typescript-eslint/parser', // ESLint가 TypeScript 코드를 파싱하기 위해 사용하는 파서를 설정합니다.
+              extends: [
+                'plugin:react/recommended', // React에 대한 추천 ESLint 규칙을 적용합니다.
+                'plugin:@typescript-eslint/recommended', // TypeScript에 대한 추천 ESLint 규칙을 적용합니다.
+                'prettier/@typescript-eslint', // Prettier와 TypeScript ESLint 규칙이 충돌하지 않도록 설정합니다.
+                'plugin:prettier/recommended', // Prettier 규칙을 적용하고, Prettier를 ESLint의 플러그인으로 설정합니다.
+              ],
+              rules: {
+                // 여기에 추가적인 ESLint 규칙을 설정할 수 있습니다.
+                // https://eslint.org/docs/latest/rules/
+              },
+            };
       ```
 
 ## Chepter3: 추천해요!
